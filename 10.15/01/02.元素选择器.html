@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* * 通用选择器，也叫通配符s */
+        * {
+            color: aqua;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 标签选择器 */
+        div {
+            color: red;
+        }
+
+        /* class 类选择器 */
+        .p-tow {
+            font-size: 50px;
+        }
+
+        .p-one {
+            color: aqua;
+        }
+
+        /* id 选择器 */
+        /* id名要保持唯一 */
+        /* id 优先级高于 class 类选择器 */
+        #span-one {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>我是标题标签</h1>
+    <p class="p-tow p-one">我是段落标签</p>
+    <div class="p-tow">我是div</div>
+    <span id="span-one">span</span>
+    <span></span>
+</body>
+
+</html>

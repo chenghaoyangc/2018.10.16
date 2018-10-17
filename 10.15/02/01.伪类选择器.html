@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 第一个子元素 */
+        li:first-child {
+            color: aqua;
+        }
+
+        /* 最后一个子元素 */
+        li:last-child {
+            color: red;
+        }
+
+        /* 仅有一个子元素的会被选中 */
+        li:only-child {
+            font-size: 50px;
+        }
+
+        /* 选择其中一个 子 元素 */
+        li:nth-child(2) {
+            color: yellow;
+        }
+
+        /* ul:first-child li:nth-child(1),
+        li:nth-child(2) {
+            color: yellow;
+        } */
+        /* 倒数第 2 个子元素 */
+        li:nth-last-child(2) {
+            color: yellowgreen;
+        }
+
+        /* 第一个同级兄弟 */
+        li:first-of-type {
+            font-weight: bold;
+        }
+
+        /* 最后一个同级兄弟 */
+        li:last-of-type {
+            color: blue;
+        }
+
+        /* 只有一个兄弟的元素会被选中 */
+        li:only-of-type {
+            font-style: italic;
+        }
+
+        /* 第几个兄弟元素 */
+        li:nth-of-type(3) {
+            color: brown;
+        }
+
+        /* 除了 .abc 之外的都会被选中 */
+        p:not(.abc) {
+            color: olive;
+            font-size: 50px;
+        }
+
+        /* 根元素 */
+        html:root {
+            background: orchid;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>上元教育1</li>
+        <li>上元教育2</li>
+        <li>上元教育3</li>
+        <li>上元教育4</li>
+        <li>上元教育5</li>
+        <li>上元教育6</li>
+        <li>上元教育7</li>
+    </ul>
+    <ul>
+        <li>一个li</li>
+    </ul>
+    <div>
+        <p class="abc">p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+    </div>
+</body>
+
+</html>

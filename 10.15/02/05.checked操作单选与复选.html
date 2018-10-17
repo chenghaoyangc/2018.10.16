@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* checked 选中状态，用来操作单选与复选框 */
+        /* 选中时，改变文字的背景颜色 */
+        input:checked+span{
+            background-color:red; 
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <input type="radio" checked>
+            <span>红色</span>
+        </li>
+        <li>
+            <input type="radio">
+            <span>红色</span>
+        </li>
+        <li>
+            <input type="radio">
+            <span>红色</span>
+        </li>
+        <li>
+            <input type="text">
+            <span>红色</span>
+        </li>
+    </ul>
+</body>
+
+</html>

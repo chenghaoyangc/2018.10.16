@@ -1,0 +1,16 @@
+/* 第四种方式（导入css文件） */
+/* 1. link 会发出二次请求，消耗性能，不推荐对此引入，推荐用 import 导入 */
+/* 2. 模块化开发， 有需要这个样式的时候就可以导入这个文件*/
+@import url('./导入文件.css');
+
+h1{
+    font-style: italic;
+}
+
+div{
+    color: red !important;
+
+}
+
+
+

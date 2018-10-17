@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 第三种方式(外链样式) -->
+    <!-- 在开发中推荐使用外链样式 -->
+    <!-- 因为 内容 可以 与样式分离 -->
+    <!-- 代码清晰，便于管理优化 -->
+    <!-- link 会发出二次请求，消耗性能，不推荐对此引入，推荐用 import 导入 -->
+    <link rel="stylesheet" href="./外链样式.css">
+    <!-- <link rel="stylesheet" href="./导入文件.css"> -->
+    <!-- 第二种方式 (内联样式) -->
+    <!-- 在 head 里面添加一个 style 标签，样式写在 style 标签内部  -->
+
+    <style>
+        p{
+            font-size: 60px;
+        }
+        div{
+            color: blue;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!--第一种方式 （行内样式） -->
+    <!-- 1.写在开始标签里面 -->
+    <!-- 2.在开始标签里面添加一个 style 属性 -->
+    <div style="font-size: 50px;">我是div</div>
+    <p>我是p标签元素</p>
+    <h1>我是h1标题标签</h1>
+    <h2>我是h2标签元素</h2>
+</body>
+</html>
+
+<!-- 样式 优先级 -->
+<!-- 就近原则，离标签元素最近的 样式，优先级越高 -->
+<!-- !important 优先级 最高 -->

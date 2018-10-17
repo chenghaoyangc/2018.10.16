@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 包含选择器 */
+        /* 限制元素范围，只会选中范围内的元素 */
+        #box span {
+            color: red;
+        }
+
+        /* 子选择器 */
+        /* 只会选中 子元素 */
+        #box>div {
+            font-size: 50px;
+        }
+
+        /* 相邻兄弟选择器 */
+        /* 自身不会被选中，会选中 兄弟 元素 */
+        li+li {
+            color: blue;
+        }
+
+        /* 兄弟选择器 */
+        .test p~p {
+            color: aqua;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 包含选择器 -->
+    <div id="box">
+        <div>
+            <span>wo shi span1 <ul>
+                    <li>
+                        <p>
+                            <span> wo shi span2 </span>
+                        </p>
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <span>ssadsd</span>
+    <!-- 子选择器 -->
+    <div>
+        <p> wo shi p </p>
+        <span>
+            <p>wo shi p2</p>
+        </span>
+    </div>
+    <!-- 相邻兄弟选择器 -->
+    <ul>
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <p>wo shi p</p>
+        <li>我是li3</li>
+        <li>我是li4</li>
+        <li>我是li5</li>
+    </ul>
+    <!-- 所有兄弟选择器 -->
+    <div class="test">
+        <h3>这是一个标题</h3>
+        <p>这是一个文字段落</p>
+        <p>这是一个文字段落</p>
+        <h3>这是一个标题</h3>
+        <p>这是一个文字段落</p>
+        <h3>这是一个标题</h3>
+        <p>这是一个文字段落</p>
+        <p>这是一个文字段落</p>
+    </div>
+</body>
+
+</html>

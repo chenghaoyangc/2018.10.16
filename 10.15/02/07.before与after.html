@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* before 在标签元素之前添加内容，需要 content 配合使用 */
+        div::before {
+            content: '我是新来的-'
+        }
+
+        div {
+            font-size: 50px;
+            color: aqua;
+            width: 500px;
+            height: 500px;
+        }
+
+        /* 通过 brfore 添加进来的图片，没办法设置图片大小 */
+        div::before {
+            content: url('./github.png')
+        }
+
+        /* after 在标签元素之后添加内容，需要 content 配合使用 */
+        div::after {
+            content: '-我是后来的'
+        }
+    </style>
+</head>
+
+<body>
+    <div>你好</div>
+</body>
+
+</html>
